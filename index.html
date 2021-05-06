@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper container">
+        <div class="todoList">
+            <div class="cover-img">
+                <div class="cover-inner">
+                    <h3>TODO's</h3>
+                </div>
+            </div>
+            <div class="container">
+                <form class="d-flex" action="">
+                    <input class="form-control ms-2" type="text" id="guardar" placeholder="Introduce una tarea">
+
+                    <select id="prioridad-tarea" class="p-1 ms-2 form-select">
+                        <option value="0" selected>Seleccione una prioridad</option>
+                        <option value="1">URGENTE</option>
+                        <option value="2">Mensual</option>
+                        <option value="3">Diaria</option>
+                    </select>
+                    <input class="btn btn-outline-success ms-2" id="btn-guardar" type="submit" value="Añadir">
+                </form>
+            </div>
+            <nav>
+                <div class="container div-nav d-flex">
+                    <form action="">
+                        <select id="prioridad-tarea-nav" class="form-select mt-2" aria-label="Default select example">
+                        <option class="form-control" value="" selected>Prioridad</option>
+                        <option value="1">URGENTE</option>
+                        <option value="2">Mensual</option>
+                        <option value="3">Diaria</option>
+                    </select>
+                    </form>
+                    <input type="text" class="form-control m-2" id="search" placeholder="Introduce una tarea a buscar">
+                </div>
+            </nav>
+            <main>
+                <div class="main-tareas">
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/datos.js"></script>
+    <script src="./js/funciones.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
